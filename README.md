@@ -23,6 +23,7 @@ tapaviz의 기본 스타일을 적용하는 함수입니다. 기본 값은 `pane
 panel=TRUE면 차트 밑배경이 회색으로 채워집니다. panel=FALSE면 밑배경이 사라집니다.
 
 gridLines으로 x축과 y축의 유무를 설정할 수 있습니다. x축만 그리면 gridLines="x", y축만 그리면 gridLines="y", 모두 그리면 "both". 축 없애고 싶으면 그 외 다른 텍스트 입력
+
 legend로 범례 위치를 지정합니다. "top", "bottom", "left", "right"으로 위치를 설정할 수  있습니다. 범례를 없애고 싶으면 "none"을 입력하세요. 
 
 
