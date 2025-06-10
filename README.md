@@ -12,7 +12,7 @@
 ## 패키지 함수
 
 ### register_fonts()
-tapaviz에서 사용하는 폰트를 설치하는 함수입니다. 한 번만 실행하시면 됩니다. NotoSansKR 폰트를 시스템에 등록합니다.
+tapaviz에서 사용하는 폰트를 설치하는 함수입니다. 한 번만 실행하시면 됩니다. 차트 제작에 필요한 폰트(NotoSansKR 등)를 시스템에 등록합니다.
 
     register_fonts()
 
