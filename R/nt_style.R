@@ -6,7 +6,6 @@
 #' @return ggplot2 theme object
 #' @export
 nt_style <- function(panel=TRUE, gridLines="x", legend="top") { # default
-  # legend <- rlang::enquo(legend)
 
   plot_background <- ggplot2::element_rect(fill = "#ffffff", color = NA)
   plot_title <- ggplot2::element_text(size=ggplot2::unit(24, "pt"), family="notosans", face="bold",
@@ -43,8 +42,6 @@ nt_style <- function(panel=TRUE, gridLines="x", legend="top") { # default
 
 
   legend_margin <- ggplot2::margin(t = 0, l = 0, b = 0, r = 0)
-  # 이걸 enquo로 해야 하나
-  # legend_position <- rlang::eval_tidy(legend)
   legend_position <- legend
 
   legend_key_width <- ggplot2::unit(16, "pt")
