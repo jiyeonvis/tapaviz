@@ -8,9 +8,9 @@
 nt_style <- function(panel=TRUE, gridLines="x", legend="top") { # default
 
   plot_background <- ggplot2::element_rect(fill = "#ffffff", color = NA)
-  plot_title <- ggplot2::element_text(size=ggplot2::unit(24, "pt"), family="notosans", face="bold",
+  plot_title <- ggplot2::element_text(size=ggplot2::unit(33, "pt"), family="notosans", face="bold",lineheight=1.1,
                                       margin = ggplot2::margin(t = 10, l = 0, b = 7, r = 0))
-  plot_subtitle <- ggplot2::element_text(size=ggplot2::unit(16, "pt"), family="notosans",
+  plot_subtitle <- ggplot2::element_text(size=ggplot2::unit(20, "pt"), family="notosans",lineheight=1.1,
                                          margin = ggplot2::margin(t = 0, l = 0, b = 10, r = 0))
 
   plot_caption <- ggplot2::element_text(
