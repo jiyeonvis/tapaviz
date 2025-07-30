@@ -50,8 +50,8 @@ nt_style <- function(panel=TRUE, gridLines="x", legend="top") { # default
   legend_text <- ggplot2::element_text(size = 14,family="notosans")
   legend_title <- ggplot2::element_blank()
 
-  axis_title <- ggplot2::element_text(color = "#333", size=14,family="notosans")
-  axis_text <- ggplot2::element_text(color = "#333", size=12,family="notosans")
+  axis_title <- ggplot2::element_blank() # text(color = "#333", size=14,family="notosans")
+  axis_text <- ggplot2::element_text(color = "#333", size=15,family="notosans")
   axis_ticks <-ggplot2::element_blank()
 
 
