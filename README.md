@@ -29,15 +29,16 @@ legend로 범례 위치를 지정합니다. "top", "bottom", "left", "right"으�
 
 (아직 좀 불친절한) 예제 코드는 아래와 같습니다
 
-    chart.data %>% mutate(minus = -1*minus,
+    chart.data %>% 
+      mutate(minus = -1*minus,
                  시도 = factor(시도, levels=order.sido %>% rev)) %>% 
-    gather(2:3, key="key", value="value") %>% 
-    ggplot(aes(x=시도, y=value, group=key, fill=key)) +
-    geom_bar(stat="identity", width=0.8) +
-    coord_flip() +
-    scale_fill_manual(values=c("minus"="#E64E53", "plus"="#3D89C3")) +
-    geom_hline(yintercept=0, size=0.5)+
-    nt_style(panel=F, legend="none")
+      gather(2:3, key="key", value="value") %>% 
+      ggplot(aes(x=시도, y=value, group=key, fill=key)) +
+      geom_bar(stat="identity", width=0.8) +
+      coord_flip() +
+      scale_fill_manual(values=c("minus"="#E64E53", "plus"="#3D89C3")) +
+      geom_hline(yintercept=0, size=0.5)+
+      nt_style(panel=F, legend="none")
     
 ## 문의
 jiyeon@newstapa.org
